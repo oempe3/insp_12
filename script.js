@@ -386,7 +386,6 @@ function createFieldHTML(fieldConfig, currentValue) {
       }
       break;
     }
-    }
 
     case 'status':
       inputHTML = `<select id="${fieldId}" name="${fieldConfig.name}" data-field-name="${fieldConfig.name}" ${required} onchange="updateStatusIndicator('${fieldId}', this.value); handleFieldChange('${fieldConfig.name}', this.value)">`;
